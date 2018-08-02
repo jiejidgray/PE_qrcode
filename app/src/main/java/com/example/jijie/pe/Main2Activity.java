@@ -18,6 +18,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class Main2Activity extends AppCompatActivity {
     private FirebaseAuth firebaseAuth;
     private ImageView scan;
+    private ImageView search;
 
 
     @Override
@@ -51,6 +52,15 @@ public class Main2Activity extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 startActivity(new Intent(Main2Activity.this,SCANActivity.class));
+            }
+        });
+
+        search = (ImageView)findViewById(R.id.search);
+        search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Main2Activity.this,CreateActivity.class));
+
             }
         });
 

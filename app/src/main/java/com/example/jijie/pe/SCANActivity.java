@@ -14,7 +14,8 @@ import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
 public class SCANActivity extends AppCompatActivity {
-    private String codeResult;
+    private int codeResult;
+    private String refNumber;
     private DatabaseReference mDatabase;
 
     @Override
@@ -38,9 +39,14 @@ public class SCANActivity extends AppCompatActivity {
         if(result != null) {
             if(result.getContents() == null) {
                 Toast.makeText(this, "Scan error", Toast.LENGTH_LONG).show();
+                codeResult = 12345678;
+                Intent intent=new Intent();
+                intent.setClass(SCANActivity.this,FormActivity.class);
+                intent.putExtra("reference",codeResult);
+                startActivity(intent);
             } else {
                 Toast.makeText(this, "Scan réussi, le numéro de référence:" + result.getContents(), Toast.LENGTH_LONG).show();
-                codeResult = result.getContents();
+                refNumber = result.getContents();
                 Intent intent=new Intent();
 
                 intent.setClass(SCANActivity.this,FormActivity.class);
