@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "293518530295",
+    "firebase_url": "https://myscanapp-1a473.firebaseio.com",
+    "project_id": "myscanapp-1a473",
+    "storage_bucket": "myscanapp-1a473.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293518530295:android:c2a77be5e52e6a75",
+        "android_client_info": {
+          "package_name": "com.example.jijie.pe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "293518530295-ir4nkmd5nlkjk3cf2dprtb1k10703tur.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkLhotedz7fQagdItl-ofLI4dktdTlvAE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
